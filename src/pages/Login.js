@@ -15,10 +15,13 @@ export default function Login({ isLoggedin, setIsLoggedin }) {
     e.preventDefault();
     setIsLoading(true);
     try {
-      const response = await axios.post("http://localhost:5000/users/login", {
-        email: e.target.email.value,
-        password: e.target.password.value,
-      });
+      const response = await axios.post(
+        "https://eduserver.onrender.com/users/login",
+        {
+          email: e.target.email.value,
+          password: e.target.password.value,
+        }
+      );
 
       if (response.data.success === true) {
         // Login successful, store the token and perform necessary actions
