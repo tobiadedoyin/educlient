@@ -37,8 +37,10 @@ export default function Signup() {
     try {
       setIsLoading(true);
       const checkEmail = await axios.post(
-        "http://localhost:5000/users/checkEmail",
-        { email: data.email }
+        "https://eduserver.onrender.com/users/checkEmail",
+        {
+          email: data.email,
+        }
       );
       if (checkEmail.data.exists) {
         setEmailExist(checkEmail.data.message);
@@ -47,7 +49,7 @@ export default function Signup() {
       }
 
       const response = await axios.post(
-        "http://localhost:5000/users/signup",
+        "https://eduserver.onrender.com/users/signup",
         data
       );
       console.log(response);
