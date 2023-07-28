@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/educlient/static/css/main.0990315c.css",
+    "main.js": "/educlient/static/js/main.e6bf7c26.js",
+    "static/media/unsplash.jpg": "/educlient/static/media/unsplash.3e17e87145d6a951edf2.jpg",
+    "static/media/b_logo.png": "/educlient/static/media/b_logo.0ceb0e1d27eb4a89001e.png",
+    "index.html": "/educlient/index.html",
+    "main.0990315c.css.map": "/educlient/static/css/main.0990315c.css.map",
+    "main.e6bf7c26.js.map": "/educlient/static/js/main.e6bf7c26.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0990315c.css",
+    "static/js/main.e6bf7c26.js"
+  ]
+}
